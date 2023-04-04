@@ -24,7 +24,11 @@
             <div class="row">
                 <!-- LOGO -->
                 <div class=" col-md-offset-4 col-md-4">
-                    <a href="index.php" id="logo"><img src="images/news.jpg"></a>
+                <h2 class="primary">
+                <a href="./index.php">Blog Site</a>
+                </h2>    
+               
+                   <!-- <a href="href='/  ?>">Blog Site </a>   -->
                 </div>
                 <!-- /LOGO -->
             </div>

@@ -32,18 +32,17 @@
                             <div class="post-content">
                                 <div class="row">
                                     <div class="col-md-4">
-                                        <a class="post-img" href="single.php?id=<?php
-                                                                                echo $row['post_id'];
-                                                                                ?>"><img src="admin/upload/<?php echo $row['post_img'];
-                                                                                                            ?>" alt="" /></a>
+                                        <a class="post-img" href="single.php?id=<?php echo $row['post_id']; ?>">
+                                            <img src="admin/upload/<?php echo $row['post_img']; ?>" alt="" />
+                                        </a>
                                     </div>
                                     <div class="col-md-8">
                                         <div class="inner-content clearfix">
-                                            <h3><a href='single.php?id=<?php
-                                                                        echo $row['post_id'];
-                                                                        ?>'><?php
-                                                                            echo $row['title'];
-                                                                            ?> </a></h3>
+                                            <h3>
+                                                <a href='single.php?id=<?php echo $row['post_id']; ?>'>
+                                                    <?php echo $row['title']; ?>
+                                                </a>
+                                            </h3>
                                             <div class="post-information">
                                                 <span>
                                                     <i class="fa fa-tags" aria-hidden="true"></i>
@@ -58,9 +57,7 @@
                                                 </span>
                                                 <span>
                                                     <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                    <?php
-                                                    echo $row['post_date'];
-                                                    ?>
+                                                    <?php echo $row['post_date']; ?>
                                                 </span>
                                             </div>
                                             <p class="description">
