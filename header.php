@@ -54,7 +54,7 @@
 
                     ?>
                         <ul class='menu'>
-                        <li><a href='<?php echo $hostname; ?>'>Home</a></li>
+                        <li><a class="" href='<?php echo $hostname; ?>'>Home</a></li>
                             <?php
                             while ($row = mysqli_fetch_assoc($result)) {
                                 if(isset($_GET['cid']))
@@ -67,6 +67,7 @@
                                 }                              
                             echo "<li><a class='{$active}' href='category.php?cid={$row['category_id']}'>{$row['category_name']}</a></li>";
                             }  ?>
+                              <li><a class="mr-5" href='<?php echo $hostname ."/"."contact.php"; ?>'>Contact</a></li>
                         </ul>
                     <?php
                     }
