@@ -34,6 +34,8 @@ if ($conn->query($sql) === TRUE) {
     $body = "From: $name\nEmail: $email\n\n$message";
 
     if (mail($to, $subject, $body)) {
+
+
         header("Location: contact.php?status=success");
     } else {
         header("Location: contact.php?status=email_error");

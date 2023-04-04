@@ -1,7 +1,0 @@
-total record=7
-limit per page=3
-
-total pages= ceil(total  record / limit per page)
-
-
-lorem50
