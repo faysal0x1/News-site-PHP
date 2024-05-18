@@ -67,6 +67,9 @@ if (!isset($_SESSION["username"])) {
                                 <a href="category.php">Category</a>
                             </li>
                             <li>
+                                <a href="message.php">Messages</a>
+                            </li>
+                            <li>
                                 <a href="users.php">Users</a>
                             </li>
                         <?php
