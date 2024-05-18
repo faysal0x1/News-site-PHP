@@ -23,7 +23,7 @@ if (isset($_POST['save'])) {
 
         if(mysqli_query($conn,$sql1))
         {
-            header("Location: {$hostname}/admin/users.php");
+            header("Location: {$hostname}/users.php");
         }
     }
 }

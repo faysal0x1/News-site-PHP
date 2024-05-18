@@ -3,7 +3,7 @@ include "config.php";
 session_start();
 
 if (isset($_SESSION["username"])) {
-    header("Location: {$hostname}/admin/post.php");
+    header("Location: {$hostname}/post.php");
 }
 ?>
 
@@ -62,7 +62,7 @@ if (isset($_SESSION["username"])) {
                                 $_SESSION["username"] = $row['username'];
                                 $_SESSION["user_id"] = $row['user_id'];
                                 $_SESSION["user_role"] = $row['role'];
-                                header("Location: {$hostname}/admin/post.php");
+                                header("Location: {$hostname}/post.php");
                             }
                         } else {
                             echo '<div class="alert alert-danger">Username and password not match</div>';

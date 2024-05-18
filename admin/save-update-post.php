@@ -47,7 +47,7 @@ if($_POST['old_category'] != $_POST["category"] ){
 $result = mysqli_multi_query($conn,$sql);
 
 if($result){
-  header("location: {$hostname}/admin/post.php");
+  header("location: {$hostname}/post.php");
 }else{
   echo "Query Failed";
 }

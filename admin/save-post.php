@@ -40,7 +40,7 @@ $sql = "insert into post(title,description,category,post_date,author,post_img)
 $sql .= "update category set post=post+1 where category_id ={$category}";
 
 if (mysqli_multi_query($conn, $sql)) {
-    header("Location: {$hostname}/admin/post.php");
+    header("Location: {$hostname}/post.php");
 } else {
     echo "<div> Query Failed</div>";
 }

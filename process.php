@@ -12,9 +12,9 @@ if (empty($name) || empty($email) || empty($message) || !filter_var($email, FILT
 }
 
 // Connect to database
-$host = "localhost";
-$username = "root";
-$password = "";
+$host = "localhost:3307";
+$username = "riyal";
+$password = "123";
 $database = "news-site";
 
 $conn = new mysqli($host, $username, $password, $database);
@@ -34,8 +34,6 @@ if ($conn->query($sql) === TRUE) {
     $body = "From: $name\nEmail: $email\n\n$message";
 
     if (mail($to, $subject, $body)) {
-
-
         header("Location: contact.php?status=success");
     } else {
         header("Location: contact.php?status=email_error");

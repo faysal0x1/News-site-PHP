@@ -18,7 +18,7 @@ if (isset($_POST['submit'])) {
     // $result = mysqli_query($conn, $sql) or die("quesry Failed"); 
 
     if (mysqli_query($conn, $sql)) {
-        header("Location: {$hostname}/admin/users.php");
+        header("Location: {$hostname}/users.php");
     }
 }
 ?>
