@@ -42,10 +42,7 @@ if (isset($_SESSION["username"])) {
                         </div>
                         <input type="submit" name="login" class="btn btn-primary" value="login" />
                     </form>
-
-
                     <!-- /Form  End -->
-
                     <?php
                     if (isset($_POST['login'])) {
                         include "config.php";
